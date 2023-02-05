@@ -1,8 +1,8 @@
 <?php
-if($_SESSION['username'] == ''){
+include('./db/db.php');
+if($_SESSION['username'] === ''){
     header('location:login.php');
 }
-include('./db/connect.php');
 
 ?>
 
